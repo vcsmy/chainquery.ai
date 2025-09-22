@@ -1,0 +1,48 @@
+{
+  "name": "chainquery-ai",
+  "version": "1.0.0",
+  "description": "A monorepo for chainquery AI platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test",
+    "clean": "pnpm -r run clean",
+    "frontend:dev": "pnpm --filter frontend run dev",
+    "backend:dev": "pnpm --filter backend run dev",
+    "frontend:build": "pnpm --filter frontend run build",
+    "backend:build": "pnpm --filter backend run build",
+    "start": "concurrently \"pnpm backend:dev\" \"pnpm frontend:dev\"",
+    "start:prod": "pnpm build && concurrently \"cd apps/backend && node dist/index.js\" \"cd apps/frontend && pnpm preview\"",
+    "install:all": "pnpm install",
+    "type-check": "pnpm -r run type-check"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.0.0",
+    "@types/supertest": "^6.0.3",
+    "@vitest/ui": "^3.2.4",
+    "c8": "^10.1.3",
+    "concurrently": "^8.2.0",
+    "jest": "^30.1.3",
+    "jsdom": "^27.0.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.4",
+    "typescript": "^5.0.0",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
