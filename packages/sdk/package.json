@@ -2,6 +2,7 @@
   "name": "@chainquery-ai/sdk",
   "version": "1.0.0",
   "description": "SDK package for ChainQuery AI",
+  "author": "Bollavarapu <vijaybabu.mail@gmail.com>",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

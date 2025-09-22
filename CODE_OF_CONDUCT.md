@@ -60,7 +60,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-[conduct@chainquery-ai.com](mailto:conduct@chainquery-ai.com).
+[vijaybabu.mail@gmail.com](mailto:vijaybabu.mail@gmail.com).
 
 All complaints will be reviewed and investigated promptly and fairly.
 

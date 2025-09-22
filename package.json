@@ -2,6 +2,7 @@
   "name": "chainquery-ai",
   "version": "1.0.0",
   "description": "A monorepo for chainquery AI platform",
+  "author": "Bollavarapu <vijaybabu.mail@gmail.com>",
   "private": true,
   "type": "module",
   "scripts": {
